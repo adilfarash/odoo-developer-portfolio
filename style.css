@@ -812,68 +812,88 @@
     margin-bottom: var(--space-md);
   }
 
-  .contact-form-card {
-    padding: var(--space-lg);
+  .contact-links-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
   }
 
-  .form-group {
-    margin-bottom: var(--space-md);
+  @media (min-width: 600px) {
+    .contact-links-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .contact-link-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    text-decoration: none;
+    color: var(--text-primary);
+  }
+
+  .contact-item-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: transform var(--transition-fast);
+  }
+
+  .contact-link-item:hover .contact-item-icon {
+    transform: scale(1.1);
+  }
+
+  .contact-item-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+  }
+
+  /* Specific brand colors for icons */
+  .whatsapp-icon {
+    background-color: light-dark(oklch(92% 0.1 140), oklch(25% 0.08 140));
+    color: light-dark(oklch(45% 0.15 140), oklch(80% 0.1 140));
+  }
+
+  .linkedin-icon {
+    background-color: light-dark(oklch(92% 0.06 230), oklch(25% 0.05 230));
+    color: light-dark(oklch(45% 0.12 230), oklch(80% 0.08 230));
+  }
+
+  .github-icon {
+    background-color: light-dark(oklch(92% 0 0), oklch(25% 0 0));
+    color: light-dark(oklch(20% 0 0), oklch(85% 0 0));
+  }
+
+  .email-icon {
+    background-color: light-dark(oklch(92% 0.08 290), oklch(25% 0.06 290));
+    color: light-dark(oklch(45% 0.18 290), oklch(80% 0.1 290));
+  }
+
+  .contact-item-info {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 2px;
   }
 
-  .form-group label {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--text-secondary);
-  }
-
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 0.8rem;
-    background-color: var(--bg-secondary);
-    border: 1px solid var(--glass-border);
-    border-radius: var(--radius-sm);
-    color: var(--text-primary);
-    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
-  }
-
-  .form-group input:focus,
-  .form-group textarea:focus {
-    outline: none;
-    border-color: var(--accent);
-    box-shadow: 0 0 0 3px oklch(from var(--accent) l c h / 0.15);
-  }
-
-  .form-group input.invalid,
-  .form-group textarea.invalid {
-    border-color: oklch(60% 0.18 20); /* Reddish warning color */
-  }
-
-  .error-message {
+  .contact-item-label {
     font-size: 0.8rem;
-    color: oklch(60% 0.18 20);
-    font-weight: 500;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 
-  #form-success-message {
-    display: none;
-    background-color: oklch(85% 0.12 140); /* Green background */
-    color: oklch(35% 0.12 140);
-    padding: var(--space-sm);
-    border-radius: var(--radius-sm);
-    margin-bottom: var(--space-md);
+  .contact-item-value {
+    font-size: 0.95rem;
     font-weight: 600;
-    text-align: center;
-    border: 1px solid oklch(75% 0.15 140);
-  }
-
-  [data-theme="dark"] #form-success-message {
-    background-color: oklch(30% 0.08 140);
-    color: oklch(80% 0.08 140);
-    border-color: oklch(40% 0.1 140);
+    color: var(--text-primary);
+    word-break: break-all;
   }
 
   /* FOOTER */
