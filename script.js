@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Dynamic Typing Animation
   const typingText = document.getElementById('typing-text');
   if (typingText) {
-    const roles = ['Odoo Developer', 'Python Developer', 'ERP Customization Specialist'];
+    const roles = ['an Odoo Developer', 'a Python Developer', 'an ERP Customization Specialist'];
     let roleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
