@@ -6,7 +6,7 @@
   <style>
     @page {
       size: A4;
-      margin: 15mm 18mm 15mm 18mm;
+      margin: 16mm 18mm 16mm 18mm;
     }
     * {
       box-sizing: border-box;
@@ -15,75 +15,73 @@
     }
     body {
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      color: #111;
-      line-height: 1.4;
-      font-size: 10pt;
+      color: #1a1a1a;
+      line-height: 1.5;
+      font-size: 10.5pt;
       background: #fff;
     }
     .header {
       text-align: center;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
     .name {
-      font-size: 24pt;
+      font-size: 25pt;
       font-weight: 800;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.8px;
       color: #111;
       margin-bottom: 4px;
     }
     .title {
-      font-size: 11.5pt;
+      font-size: 12pt;
       font-weight: 700;
       color: #222;
-      letter-spacing: 0.5px;
-      margin-bottom: 10px;
+      letter-spacing: 0.6px;
+      margin-bottom: 12px;
     }
-    .contact-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 0 auto;
-    }
-    .contact-table td {
-      font-size: 9.2pt;
-      color: #222;
+    .contact-bar {
       text-align: center;
-      padding: 0 4px;
+      font-size: 9.8pt;
+      color: #333;
     }
-    .contact-table a {
+    .contact-bar span, .contact-bar a {
+      display: inline-block;
+      margin: 0 9px;
       color: #222;
+    }
+    .contact-bar a {
       text-decoration: underline;
     }
     .section-title {
-      font-size: 10.5pt;
+      font-size: 11pt;
       font-weight: 800;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.6px;
       color: #111;
-      border-bottom: 1.5px solid #111;
-      padding-bottom: 3px;
-      margin-top: 15px;
-      margin-bottom: 9px;
+      border-bottom: 1.8px solid #111;
+      padding-bottom: 4px;
+      margin-top: 20px;
+      margin-bottom: 10px;
       text-transform: uppercase;
     }
     .summary-text {
       text-align: justify;
-      font-size: 9.6pt;
-      line-height: 1.42;
-      color: #222;
+      font-size: 10.2pt;
+      line-height: 1.5;
+      color: #2a2a2a;
     }
     .job {
-      margin-bottom: 11px;
+      margin-bottom: 15px;
     }
     .job-table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 2px;
+      margin-bottom: 3px;
     }
     .job-table td {
       padding: 0;
       vertical-align: top;
     }
     .job-company {
-      font-size: 10pt;
+      font-size: 10.5pt;
       font-weight: 800;
       color: #111;
       text-transform: uppercase;
@@ -94,51 +92,51 @@
       text-transform: none;
     }
     .job-date {
-      font-size: 9.5pt;
+      font-size: 10pt;
       font-weight: 700;
       color: #111;
       text-align: right;
       white-space: nowrap;
     }
     .job-role {
-      font-size: 9.5pt;
+      font-size: 10pt;
       font-weight: 600;
-      color: #222;
-      margin-bottom: 4px;
+      color: #2a2a2a;
+      margin-bottom: 5px;
     }
     ul.bullets {
       list-style-type: disc;
       padding-left: 20px;
     }
     ul.bullets li {
-      font-size: 9.4pt;
-      color: #222;
-      margin-bottom: 3px;
-      line-height: 1.35;
+      font-size: 10pt;
+      color: #2a2a2a;
+      margin-bottom: 4px;
+      line-height: 1.45;
     }
     .skills-list {
       list-style-type: disc;
       padding-left: 20px;
     }
     .skills-list li {
-      font-size: 9.4pt;
-      color: #222;
-      margin-bottom: 3.5px;
-      line-height: 1.35;
+      font-size: 10pt;
+      color: #2a2a2a;
+      margin-bottom: 4.5px;
+      line-height: 1.45;
     }
     .skills-list strong {
       font-weight: 700;
       color: #111;
     }
     .education-school {
-      font-size: 9.8pt;
+      font-size: 10.2pt;
       font-weight: 700;
       color: #111;
-      margin-bottom: 2px;
+      margin-bottom: 3px;
     }
     .education-degree {
-      font-size: 9.4pt;
-      color: #222;
+      font-size: 10pt;
+      color: #2a2a2a;
       padding-left: 20px;
       position: relative;
     }
@@ -156,16 +154,14 @@
   <div class="header">
     <div class="name">ADIL FARASH</div>
     <div class="title">ODOO DEVELOPER</div>
-    <table class="contact-table">
-      <tr>
-        <td>+91 7902846483</td>
-        <td>afarash19@gmail.com</td>
-        <td>Vadakara, Calicut, India</td>
-        <td><a href="https://linkedin.com/in/adil-farash-67400a255">linkedin</a></td>
-        <td><a href="https://github.com/adilfarash">github</a></td>
-        <td><a href="https://adilfarash.github.io/odoo-developer-portfolio/">portfolio</a></td>
-      </tr>
-    </table>
+    <div class="contact-bar">
+      <span>+91 7902846483</span>
+      <span>afarash19@gmail.com</span>
+      <span>Vadakara, Calicut, India</span>
+      <a href="https://linkedin.com/in/adil-farash-67400a255">linkedin</a>
+      <a href="https://github.com/adilfarash">github</a>
+      <a href="https://adilfarash.github.io/odoo-developer-portfolio/">portfolio</a>
+    </div>
   </div>
 
   <!-- PROFESSIONAL SUMMARY -->
