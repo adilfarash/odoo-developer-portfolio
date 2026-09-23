@@ -2,149 +2,158 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Adil Farash - Resume</title>
+  <title>Adil Farash - CV</title>
   <style>
     @page {
       size: A4;
-      margin: 16mm 18mm 16mm 18mm;
+      margin: 0;
     }
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-    body {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      color: #1a1a1a;
-      line-height: 1.5;
-      font-size: 10.5pt;
+    html, body {
+      width: 595.5pt;
+      height: 842.25pt;
+      margin: 0;
+      padding: 0;
       background: #fff;
+    }
+    body {
+      font-family: 'Liberation Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: #111;
+      padding: 22pt 38.3pt 22pt 38.3pt;
+      -webkit-font-smoothing: antialiased;
     }
     .header {
       text-align: center;
-      margin-bottom: 18px;
+      margin-top: 0;
+      margin-bottom: 2pt;
     }
     .name {
       font-size: 25pt;
       font-weight: 800;
-      letter-spacing: 0.8px;
-      color: #111;
-      margin-bottom: 4px;
+      letter-spacing: 0.5px;
+      color: #1a1a1a;
+      line-height: 1.15;
     }
     .title {
-      font-size: 12pt;
-      font-weight: 700;
+      font-size: 13.5pt;
+      font-weight: 800;
       color: #222;
       letter-spacing: 0.6px;
-      margin-bottom: 12px;
+      margin-top: 5pt;
+      margin-bottom: 6pt;
     }
     .contact-bar {
       text-align: center;
-      font-size: 9.8pt;
-      color: #333;
-    }
-    .contact-bar span, .contact-bar a {
-      display: inline-block;
-      margin: 0 9px;
+      font-size: 9.2pt;
       color: #222;
+      margin-bottom: 4pt;
+    }
+    .contact-bar span {
+      display: inline-block;
+      margin: 0 7pt;
     }
     .contact-bar a {
+      color: #222;
       text-decoration: underline;
+      margin: 0 6pt;
+    }
+    .divider {
+      width: 100%;
+      height: 0.75pt;
+      background-color: #222;
+      margin-top: 12pt;
+      margin-bottom: 13pt;
     }
     .section-title {
-      font-size: 11pt;
+      font-size: 11.8pt;
       font-weight: 800;
-      letter-spacing: 0.6px;
+      letter-spacing: 0.4px;
       color: #111;
-      border-bottom: 1.8px solid #111;
-      padding-bottom: 4px;
-      margin-top: 20px;
-      margin-bottom: 10px;
       text-transform: uppercase;
+      margin-bottom: 6pt;
     }
     .summary-text {
+      font-size: 9.6pt;
+      line-height: 1.44;
+      color: #222;
       text-align: justify;
-      font-size: 10.2pt;
-      line-height: 1.5;
-      color: #2a2a2a;
     }
     .job {
-      margin-bottom: 15px;
+      margin-bottom: 10pt;
     }
     .job-table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 3px;
+      margin-bottom: 1.5pt;
     }
     .job-table td {
       padding: 0;
       vertical-align: top;
     }
     .job-company {
-      font-size: 10.5pt;
+      font-size: 9.8pt;
       font-weight: 800;
       color: #111;
-      text-transform: uppercase;
       text-align: left;
     }
     .job-company span {
-      font-weight: 600;
-      text-transform: none;
+      font-weight: 400;
+      color: #222;
     }
     .job-date {
-      font-size: 10pt;
+      font-size: 9.5pt;
       font-weight: 700;
       color: #111;
       text-align: right;
       white-space: nowrap;
     }
     .job-role {
-      font-size: 10pt;
-      font-weight: 600;
-      color: #2a2a2a;
-      margin-bottom: 5px;
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #222;
+      margin-left: 6pt;
+      margin-top: 2pt;
+      margin-bottom: 3.5pt;
     }
     ul.bullets {
       list-style-type: disc;
-      padding-left: 20px;
+      padding-left: 20pt;
     }
     ul.bullets li {
-      font-size: 10pt;
-      color: #2a2a2a;
-      margin-bottom: 4px;
-      line-height: 1.45;
+      font-size: 9.3pt;
+      color: #222;
+      margin-bottom: 3pt;
+      line-height: 1.35;
     }
-    .skills-list {
+    ul.skills-bullets {
       list-style-type: disc;
-      padding-left: 20px;
+      padding-left: 20pt;
     }
-    .skills-list li {
-      font-size: 10pt;
-      color: #2a2a2a;
-      margin-bottom: 4.5px;
-      line-height: 1.45;
-    }
-    .skills-list strong {
-      font-weight: 700;
-      color: #111;
+    ul.skills-bullets li {
+      font-size: 9.4pt;
+      color: #222;
+      margin-bottom: 3.6pt;
+      line-height: 1.36;
     }
     .education-school {
-      font-size: 10.2pt;
+      font-size: 9.8pt;
       font-weight: 700;
       color: #111;
-      margin-bottom: 3px;
+      margin-left: 6pt;
+      margin-bottom: 3pt;
     }
-    .education-degree {
-      font-size: 10pt;
-      color: #2a2a2a;
-      padding-left: 20px;
-      position: relative;
+    ul.education-bullets {
+      list-style-type: disc;
+      padding-left: 20pt;
     }
-    .education-degree::before {
-      content: "•";
-      position: absolute;
-      left: 6px;
-      top: 0;
+    ul.education-bullets li {
+      font-size: 9.3pt;
+      color: #222;
+      line-height: 1.35;
     }
   </style>
 </head>
@@ -163,12 +172,14 @@
       <a href="https://adilfarash.github.io/odoo-developer-portfolio/">portfolio</a>
     </div>
   </div>
+  <div class="divider"></div>
 
   <!-- PROFESSIONAL SUMMARY -->
   <div class="section-title">PROFESSIONAL SUMMARY</div>
   <p class="summary-text">
-    Odoo Developer and Python Developer with hands-on experience in Odoo ERP customization, module development, and database migration. Experienced in Odoo ORM, XML views, QWeb reports, PostgreSQL/MySQL, and front-end integration using HTML, CSS, and JavaScript. Demonstrated background conducting client site visits, delivering live module demonstrations, resolving production issues, and addressing VAPT security requirements. Strong understanding of business workflows, SDLC, debugging, and collaborative development.
+    Odoo Developer and Python Developer with hands-on experience in Odoo ERP customization and module development. Experienced in Odoo ORM, XML views, QWeb reports, PostgreSQL/MySQL, and front-end integration using HTML, CSS, and JavaScript. Demonstrated background conducting client site visits, delivering live module demonstrations, resolving production issues, and addressing VAPT security requirements. Strong understanding of business workflows, SDLC, debugging, and collaborative development.
   </p>
+  <div class="divider"></div>
 
   <!-- PROFESSIONAL EXPERIENCE -->
   <div class="section-title">PROFESSIONAL EXPERIENCE</div>
@@ -200,7 +211,7 @@
     <table class="job-table">
       <tr>
         <td class="job-company">Cybrosys Technology, <span>Kakkancheri</span></td>
-        <td class="job-date">November, 2023 – April, 2024</td>
+        <td class="job-date">November , 2023 – April, 2024</td>
       </tr>
     </table>
     <div class="job-role">Python / Odoo Developer Trainee</div>
@@ -227,23 +238,27 @@
       <li>Performed testing and debugging for cross-browser compatibility.</li>
     </ul>
   </div>
+  <div class="divider"></div>
 
   <!-- TECHNICAL SKILLS -->
   <div class="section-title">TECHNICAL SKILLS</div>
-  <ul class="skills-list">
-    <li><strong>Programming Languages:</strong> Python, C++</li>
-    <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, jQuery</li>
-    <li><strong>ERP & Frameworks:</strong> Odoo (Module Development, Customization, ORM, Views, Controllers)</li>
-    <li><strong>Reports & UI:</strong> XML, QWeb</li>
-    <li><strong>Databases:</strong> PostgreSQL, MySQL</li>
-    <li><strong>Integrations:</strong> REST API, XMLRPC</li>
-    <li><strong>Tools & Practices:</strong> Git, GitHub, Linux, Debugging, Software Testing, SDLC, VAPT Remediation, Client Demos & Support</li>
+  <ul class="skills-bullets">
+    <li>Programming Languages: Python, C++</li>
+    <li>Web Technologies: HTML, CSS, JavaScript, jQuery</li>
+    <li>ERP & Frameworks: Odoo (Module Development, Customization, ORM, Views, Controllers)</li>
+    <li>Reports & UI: XML, QWeb</li>
+    <li>Databases: PostgreSQL, MySQL</li>
+    <li>Integrations: REST API, XMLRPC</li>
+    <li>Tools & Practices: Git, GitHub, Linux, Debugging, Software Testing, SDLC, VAPT Remediation, Client Demos & Support</li>
   </ul>
+  <div class="divider"></div>
 
   <!-- EDUCATION -->
   <div class="section-title">EDUCATION</div>
   <div class="education-school">MHES College of Science and Technologies, Calicut University</div>
-  <div class="education-degree">Bachelor of Science (B.Sc.) in Computer Science</div>
+  <ul class="education-bullets">
+    <li>Bachelor of Science (B.Sc.) in Computer Science</li>
+  </ul>
 
 </body>
 </html>
